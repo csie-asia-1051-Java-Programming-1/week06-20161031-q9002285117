@@ -14,8 +14,11 @@ System.out.println("請問有幾筆資料:");
 int n=scn.nextInt();
 int data[]=new int[n];
 for(int i=0;i<n;i++){
+	data[i]=scn.nextInt();
 	
 }
+square(data,n);
+
 		
 
 
@@ -31,6 +34,11 @@ for(int i=0;i<n;i++){
 //			System.out.print();
 //		}
 //		
+	}
+	public static void square(int square[],int w){
+		for(int i=0;i<w;i++){
+			System.out.print(square[i]*square[i]+"\t");
+		}
 	}
 
 }
